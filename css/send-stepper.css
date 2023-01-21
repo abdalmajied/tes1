@@ -1,0 +1,146 @@
+.steps {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    position: relative;
+}
+.step-button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--prm-gray);
+    transition: .4s;
+}
+.step-button[aria-expanded="true"] {
+    width: 60px;
+    height: 60px;
+    background-color: rgb(96, 222, 160);
+    margin-right: 10px;
+    color: #fff;
+}
+.step-button-und {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--prm-gray);
+    transition: .4s;
+}
+.step-button-und[aria-expanded="true"] {
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+    font-weight: bold;
+    margin-right: 10px;
+    color: rgb(96, 222, 160);
+}
+.done {
+    background-color: var(--prm-color);
+    color: #fff;
+}
+.step-item {
+    z-index: 10;
+    text-align: center;
+}
+#progress {
+  -webkit-appearance:none;
+    position: absolute;
+    width: 95%;
+    z-index: 5;
+    height: 10px;
+    margin-left: 18px;
+    margin-bottom: 18px;
+}
+#progress::-webkit-progress-value {
+    background-color: var(--prm-color);
+    transition: .5s ease;
+}
+#progress::-webkit-progress-bar {
+    background-color: var(--prm-gray);
+
+}
+.card{
+    box-shadow: 5px 9px 36px rgb(184, 184, 184);
+    /* background-image: linear-gradient(
+        to top, rgb(163, 236, 200) , #fff 
+); */
+}
+.step-header i {
+    font-size:50px; 
+    width: 60px;
+    height: 60px; 
+    line-height: 60px; 
+    padding-left: 10px; 
+    cursor: pointer;
+    background-color: rgb(96, 222, 160);
+    color: #FFF; 
+    border-radius: 50%;
+}
+.card-item{
+    width: 20%;
+    height: 150px;
+    background-color: rgb(96, 222, 160);
+    border-radius: 8%;
+    margin: 10px;
+    box-shadow: 2px 7px 50px rgb(179, 179, 179);
+}
+.card-item h5{
+    display: block;
+    margin-top: 100px;
+    margin-left: 5%;
+}
+.card-item-sub{
+    width: 20%;
+    height: 100px;
+    background-color: #FFF;
+    margin: 10px;
+    box-shadow: 2px 7px 50px rgb(179, 179, 179);
+}
+.card-item-sub i ,h5{
+    display: block;
+    margin-top: 50px;
+    margin-left: 5%;
+}
+.card-body-content{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+.next-button {
+    width: 250px;
+    height: 50px;
+    border-radius: 5%;
+    border: none;
+    background-color: rgb(96, 222, 160);
+    color: #FFF;
+}
+#headingThree{
+    background-image: linear-gradient(to left,
+    rgb(60, 160, 110) ,
+    rgb(90, 222, 160) ,
+    #fff 
+    );
+    border-radius: 10px;
+}
+.card3-title-logo{
+    width: 120px;
+    height: 60px; 
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 15px;
+    background-color: rgb(235, 235, 235);
+    color: rgb(112, 112, 112);
+}
+.inputs-reg{
+    display: grid;
+    gap: 10px 30px;
+    grid-template-columns: repeat(2,40%);
+    justify-content: space-evenly;
+}
+.inputs-reg input {
+    outline: none;
+    border: none;
+    height: 40px;
+}

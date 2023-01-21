@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>send-stepper</title>
+  <link rel="stylesheet" href="css/all.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/send-stepper.css">
+</head>
+<body>
+    <div class="container">
+        <div class="step-header d-flex justify-content-between">
+            <img src="/images/icon2.png" alt="icon" style="height: 150px; width: 200px;">
+            <div class="text-center align-self-center" style="height: fit-content;">
+                <h2 class="" style="font-size: 40px;font-weight: 650;">E-qoutation</h2>
+                <p style="color: rgb(96, 222, 160);font-size: 20px; font-weight: 700;">Send-qoutation</p>
+            </div>
+            <i class="fas fa-long-arrow-alt-right align-self-center"></i> 
+        </div>
+        <div class="accordion" id="accordionExample">
+            <div class="steps">
+                <progress id="progress" value=0 max=100 ></progress>
+                <div class="step-item d-flex">
+                    <button class="step-button text-center" type="button" data-toggle="collapse"
+                        data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        1
+                    </button>
+                    <div class="step-title align-self-center">
+                        <h4>Sector</h4>
+                    </div>
+                </div>
+                <div class="step-item d-flex">
+                    <button class="step-button text-center collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        2
+                    </button>
+                    <div class="step-title align-self-center">
+                        <h4>Sub Sector</h4>
+                    </div>
+                </div>
+                <div class="step-item d-flex">
+                    <button class="step-button text-center collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        3
+                    </button>
+                    <div class="step-title align-self-center">
+                        <h4>Info</h4>
+                    </div>
+                </div>
+                <div class="step-item d-flex">
+                    <button class="step-button text-center collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
+                        4
+                    </button>
+                    <div class="step-title align-self-center">
+                        <h4>Mean Item</h4>
+                    </div>
+                </div>
+                <div class="step-item d-flex">
+                    <button class="step-button text-center collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapsefive" aria-expanded="false" aria-controls="collapsefive">
+                        5
+                    </button>
+                    <div class="step-title align-self-center">
+                        <h4>Parfoema Sheet</h4>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card">
+            
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                    data-parent="#accordionExample" >
+                    <div  id="headingOne" class="d-flex justify-content-between p-4">
+                        <h4>select the sector you wont </h4>
+                        <label style="position: relative; width: 30%;">
+                            <input class="bg-light " placeholder="Search" style="border-radius: 5px; outline: none; border: none; width: 100%; height: 40px;" type="search">
+                            <i class="fas fa-search" style="position: absolute; top: 15px; right: 10px; cursor: pointer;"></i>
+                         </label>
+                    </div>
+                    <div class="card-body container px-4">
+                        <div class="card-body-content container" >
+                            <div class="card-item">
+                                <h5 class="text-capitalize">title of sector1</h5>
+                            </div>
+                            <div class="card-item">
+                                <h5 class="text-capitalize">title of sector2</h5>
+                            </div>
+                            <div class="card-item">
+                                <h5 class="text-capitalize">title of sector3</h5>
+                            </div>
+                            <div class="card-item">
+                                <h5 class="text-capitalize">title of sector4</h5>
+                            </div>
+                            <div class="card-item">
+                                <h5 class="text-capitalize">title of sector5</h5>
+                            </div>
+                            <div class="card-item">
+                                <h5 class="text-capitalize">title of sector6</h5>
+                            </div>
+                            <div class="card-item">
+                                <h5 class="text-capitalize">title of sector7</h5>
+                            </div>
+                            <div class="card-item">
+                                <h5 class="text-capitalize">title of sector8</h5>
+                            </div>
+                            <div class="card-item">
+                                <h5 class="text-capitalize">title of sector9</h5>
+                            </div>
+                            <div class="card-item">
+                                <h5 class="text-capitalize">title of sector10</h5>
+                            </div>
+                            <div class="card-item">
+                                <h5 class="text-capitalize">title of sector11</h5>
+                            </div>
+                            <div class="card-item">
+                                <h5 class="text-capitalize">title of sector12</h5>
+                            </div>
+                        </div> <!-- content -->
+                        <div class="card-body-tail text-center pt-5 mt-5">
+                            <button class="next-button text-center collapsed  type="button" data-toggle="collapse"data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Next
+                            </button>
+                        </div> <!-- tail -->
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div  id="headingTwo" class="d-flex justify-content-between p-4">
+                        <div class="card2-title">
+                            <h2 style="color: rgb(96, 222, 160);">Selector1</h2>
+                            <h4>Select the Subsector you wont</h4>
+                        </div>
+                        <label class="align-self-center" style="position: relative; width: 30%;">
+                            <input class="bg-light" placeholder="Search" style="border-radius: 5px; outline: none; border: none; width: 100%; height: 40px;" type="search">
+                            <i class="fas fa-search" style="position: absolute; top: 15px; right: 10px; cursor: pointer;"></i>
+                         </label>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-body-content container" >
+                            <div class="card-item-sub d-flex justify-content-between">
+                                <h5 class="text-capitalize">subsector1</h5>
+                                <i class="far fa-share-square" style="color: rgb(96, 222, 160); font-size: 40px; "></i>
+                            </div>
+                            <div class="card-item-sub d-flex justify-content-between">
+                                <h5 class="text-capitalize">subsector2</h5>
+                                <i class="far fa-share-square" style="color: rgb(96, 222, 160); font-size: 40px; "></i>
+                            </div>
+                            <div class="card-item-sub d-flex justify-content-between">
+                                <h5 class="text-capitalize">subsector3</h5>
+                                <i class="far fa-share-square" style="color: rgb(96, 222, 160); font-size: 40px; "></i>
+                            </div>
+                            <div class="card-item-sub d-flex justify-content-between">
+                                <h5 class="text-capitalize">subsector4</h5>
+                                <i class="far fa-share-square" style="color: rgb(96, 222, 160); font-size: 40px; "></i>
+                            </div>
+                            <div class="card-item-sub d-flex justify-content-between">
+                                <h5 class="text-capitalize">subsector5</h5>
+                                <i class="far fa-share-square" style="color: rgb(96, 222, 160); font-size: 40px; "></i>
+                            </div>
+                            <div class="card-item-sub d-flex justify-content-between">
+                                <h5 class="text-capitalize">subsector6</h5>
+                                <i class="far fa-share-square" style="color: rgb(96, 222, 160); font-size: 40px; "></i>
+                            </div>
+                            <div class="card-item-sub d-flex justify-content-between">
+                                <h5 class="text-capitalize">subsector7</h5>
+                                <i class="far fa-share-square" style="color: rgb(96, 222, 160); font-size: 40px; "></i>
+                            </div>
+                            <div class="card-item-sub d-flex justify-content-between">
+                                <h5 class="text-capitalize">subsector8</h5>
+                                <i class="far fa-share-square" style="color: rgb(96, 222, 160); font-size: 40px; "></i>
+                            </div>
+                            <div class="card-item-sub d-flex justify-content-between">
+                                <h5 class="text-capitalize">subsector9</h5>
+                                <i class="far fa-share-square" style="color: rgb(96, 222, 160); font-size: 40px; "></i>
+                            </div>
+                            <div class="card-item-sub d-flex justify-content-between">
+                                <h5 class="text-capitalize">subsector10</h5>
+                                <i class="far fa-share-square" style="color: rgb(96, 222, 160); font-size: 40px; "></i>
+                            </div>
+                            <div class="card-item-sub d-flex justify-content-between">
+                                <h5 class="text-capitalize">subsector11</h5>
+                                <i class="far fa-share-square" style="color: rgb(96, 222, 160); font-size: 40px; "></i>
+                            </div>
+                            <div class="card-item-sub d-flex justify-content-between">
+                                <h5 class="text-capitalize">subsector12</h5>
+                                <i class="far fa-share-square" style="color: rgb(96, 222, 160); font-size: 40px; "></i>
+                            </div>
+                            <div class="card-item-sub d-flex justify-content-between">
+                                <h5 class="text-capitalize">subsector12</h5>
+                                <i class="far fa-share-square" style="color: rgb(96, 222, 160); font-size: 40px; "></i>
+                            </div>
+                            <div class="card-item-sub d-flex justify-content-between">
+                                <h5 class="text-capitalize">subsector12</h5>
+                                <i class="far fa-share-square" style="color: rgb(96, 222, 160); font-size: 40px; "></i>
+                            </div>
+                            <div class="card-item-sub d-flex justify-content-between">
+                                <h5 class="text-capitalize">subsector12</h5>
+                                <i class="far fa-share-square" style="color: rgb(96, 222, 160); font-size: 40px; "></i>
+                            </div>
+                            <div class="card-item-sub d-flex justify-content-between">
+                                <h5 class="text-capitalize">subsector12</h5>
+                                <i class="far fa-share-square" style="color: rgb(96, 222, 160); font-size: 40px; "></i>
+                            </div>
+                        </div> <!-- content -->
+                        <div class="card-body-tail text-center pt-5 mt-5">
+                            <button class="next-button text-center collapsed"  type="button" data-toggle="collapse"data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                Previous
+                            </button>
+                            <button class="next-button text-center collapsed"  type="button" data-toggle="collapse"data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Next
+                            </button>
+                        </div> <!-- tail -->
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                    data-parent="#accordionExample">
+                    <div  id="headingThree" class="d-flex justify-content-between p-3">
+                        <h4 class="align-self-center">Enter Your Information</h4>
+                        <div class="card3-title-logo ">
+                            <h4>Logo</h4>
+                        </div>
+                    </div>
+
+                    <div class="card-body">
+                        <div class="container">
+                            <h2 class="text-capitalize text-secondary">Title here</h2>
+                            <hr>
+                            <div class="inputs-reg container">
+                                <form class="d-flex flex-column">
+                                    <label class="text-secondary text-capitalize">company name </label>
+                                    <input type="text" style="border-radius: 7px; background:rgb(245, 245, 245); ">
+                                </form>
+                                <form class="d-flex flex-column">
+                                    <label class="text-secondary text-capitalize">company name </label>
+                                    <input type="text" style="border-radius: 7px; background:rgb(245, 245, 245); ">
+                                </form>
+                                <form class="d-flex flex-column">
+                                    <label class="text-secondary text-capitalize">company no/code </label>
+                                    <input type="text" style="border-radius: 7px; background:rgb(245, 245, 245); ">
+                                </form>
+                                <form class="d-flex flex-column">
+                                    <label class="text-secondary text-capitalize">tel </label>
+                                    <input type="number" style="border-radius: 7px; background:rgb(245, 245, 245); ">
+                                </form>
+                                <form class="d-flex flex-column">
+                                    <label class="text-secondary text-capitalize">contract </label>
+                                    <input type="text" style="border-radius: 7px; background:rgb(245, 245, 245); ">
+                                </form>
+                                <form class="d-flex flex-column">
+                                    <label class="text-secondary text-capitalize">fax </label>
+                                    <input type="text" style="border-radius: 7px; background:rgb(245, 245, 245); ">
+                                </form>
+                                <form class="d-flex flex-column">
+                                    <label class="text-secondary text-capitalize">ship to </label>
+                                    <input type="text" style="border-radius: 7px; background:rgb(245, 245, 245); ">
+                                </form>
+                                <form class="d-flex flex-column">
+                                    <label class="text-secondary text-capitalize">Email </label>
+                                    <input type="email" style="border-radius: 7px; background:rgb(245, 245, 245); ">
+                                </form>
+                                
+                            </div>
+                            <div class="d-flex flex-column px-5  container">
+                                <label class="text-secondary text-capitalize">address </label>
+                                <input type="text" style="border-radius: 7px; background:rgb(245, 245, 245); height: 40px; border: none ; outline: none;">
+                             </div>
+                            <div class="inputs-reg container">
+                                <form class="d-flex flex-column">
+                                    <label class="text-secondary text-capitalize">service order no </label>
+                                    <input type="text" style="border-radius: 7px; background:rgb(245, 245, 245); ">
+                                </form>
+                                <form class="d-flex flex-column">
+                                    <label class="text-secondary text-capitalize">po box </label>
+                                    <input type="text" style="border-radius: 7px; background:rgb(245, 245, 245); ">
+                                </form>
+                                <form class="d-flex flex-column" >
+                                    <label class="text-secondary text-capitalize">notes </label>
+                                    <input type="text" style="border-radius: 7px; background:rgb(245, 245, 245); ">
+                                </form>
+                                <div class="inputs-reg justify-content-between" >
+                                    <form class="d-flex flex-column">
+                                        <label class="text-secondary text-capitalize">date </label>
+                                        <input type="date" style="border-radius: 7px; background:rgb(245, 245, 245); ">
+                                    </form>
+                                    <form class="d-flex flex-column">
+                                        <label class="text-secondary text-capitalize">to </label>
+                                        <input type="date" style="border-radius: 7px; background:rgb(245, 245, 245); ">
+                                    </form>
+                                </div>
+                                <form class="d-flex flex-column">
+                                    <label class="text-secondary text-capitalize">password </label>
+                                    <input type="password" style="border-radius: 7px; background:rgb(245, 245, 245); ">
+                                </form>
+                                <form class="d-flex flex-column">
+                                    <label class="text-secondary text-capitalize">confirm password </label>
+                                    <input type="password" style="border-radius: 7px; background:rgb(245, 245, 245); ">
+                                </form>
+                            </div>
+                            <div class="card-body-tail text-center pt-5 mt-5">
+                                <button class="next-button text-center collapsed"  type="button" data-toggle="collapse"data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Previous
+                                </button>
+                                <button class="next-button text-center collapsed"  type="button" data-toggle="collapse"data-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
+                                    Next
+                                </button>
+                            </div> <!-- tail -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                
+                <div id="collapsefour" class="collapse" aria-labelledby="headingfour"
+                    data-parent="#accordionExample">
+                    <div  id="headingfour">
+            
+                    </div>
+                    <div class="card-body">
+                        your content goes here...
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div  id="headingfive">
+            
+                </div>
+                <div id="collapsefive" class="collapse" aria-labelledby="headingfivecollapsefive"
+                    data-parent="#accordionExample">
+                    <div class="card-body">
+                        your content goes here...
+                    </div>
+                </div>
+            </div>
+            <div class="list text-center p-5">
+                <button class="step-button-und text-center" type="button" data-toggle="collapse"
+                data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">1</button> 
+
+                <button class="step-button-und text-center collapsed" type="button" data-toggle="collapse"
+                data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">2</button>
+
+                 <button class="step-button-und text-center collapsed" type="button" data-toggle="collapse"
+                data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">3</button>
+
+                <button class="step-button-und text-center collapsed" type="button" data-toggle="collapse"
+                 data-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">4</button>
+
+                <button class="step-button-und text-center collapsed" type="button" data-toggle="collapse"
+                data-target="#collapsefive" aria-expanded="false" aria-controls="collapsefive">5</button>
+            </div> <!-- tail -->
+            <!-- <div class="card-body-tail text-center p-5">
+                <button class="step-button text-center collapsed" type="button" data-toggle="collapse"data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Next
+                </button>
+            </div>  -->
+        </div>
+    </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <!-- Stepper JavaScript -->
+    <script>
+    const stepButtons = document.querySelectorAll('.step-button');
+    const progress = document.querySelector('#progress');
+
+    Array.from(stepButtons).forEach((button,index) => {
+        button.addEventListener('click', () => {
+            progress.setAttribute('value', index * 100 /(stepButtons.length - 1) );//there are 3 buttons. 2 spaces.
+
+            //stepButtons.forEach((item, secindex)=>{
+                // if(index > secindex){
+                //     item.classList.add('done');
+                // }
+                // if(index < secindex){
+                //     item.classList.remove('done');
+                // }
+           // })
+        })
+    })
+    </script>
+    
+</body>
+</html>
+
+
